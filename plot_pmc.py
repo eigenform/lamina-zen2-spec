@@ -45,6 +45,7 @@ for (idx, ax) in enumerate(axs):
     ax.yaxis.set_major_locator(MaxNLocator(integer=True))
     #ax.set_yticks(range(0, max(data[idx][2])))
     ax.plot(data[idx][1], data[idx][2], color=colors[idx])
+    ax.set_ylim(ymin=0)
 
 fig.set_dpi(200)
 fig.suptitle(title)
@@ -53,6 +54,8 @@ fig.supylabel("Number of events")
 fig.supxlabel("Time (sequential test number)")
 plt.tight_layout()
 #fig.align_labels()
-#plt.show()
-plt.savefig(ofile, dpi=200)
 
+plt.savefig(ofile, dpi=200)
+print("Wrote to {}".format(ofile))
+
+plt.show()

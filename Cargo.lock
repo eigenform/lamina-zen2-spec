@@ -65,7 +65,7 @@ dependencies = [
 [[package]]
 name = "lamina"
 version = "0.1.0"
-source = "git+https://github.com/eigenform/lamina#e4a97b54e93ba66c958da1e674206f511db5af8a"
+source = "git+https://github.com/eigenform/lamina#d385328d5dfa2ca04cc885a5f87f4989ad595cb1"
 dependencies = [
  "dynasmrt",
  "iced-x86",
